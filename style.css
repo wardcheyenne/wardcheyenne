@@ -5,15 +5,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(120deg,   #effafa  , #ffffff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 30s ease infinite;
 }
 
+@keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
 .container {
     display: flex;
     max-width: 1050px;
     width: 80%;
     margin: 1rem;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.1);
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+    background-color: white;
+
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
@@ -59,4 +69,8 @@ a {
 
 li {
 	padding: 0.25em;
+}
+
+.main-links {
+	padding: 0.5em;
 }
